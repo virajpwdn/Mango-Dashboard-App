@@ -44,6 +44,20 @@ const UsersList = () => {
       role: "User",
       status: "Suspended",
     },
+    {
+      id: 7,
+      name: "Rachel Green",
+      email: "Rachel@example.com",
+      role: "Editor",
+      status: "Active",
+    },
+    {
+      id: 8,
+      name: "Monica Geller",
+      email: "monica@example.com",
+      role: "Editor",
+      status: "Active",
+    },
   ];
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 p-8">
@@ -64,7 +78,7 @@ const UsersList = () => {
             <tbody>
               {users.map((user) => {
                 return (
-                  <tr key={user.id} className="border-t hover:bg-gray-50 text-gray-600">
+                  <tr key={user.id} className="border-t hover:bg-gray-50 text-gray-700">
                     <td className="py-4 px-4">{user.name}</td>
                     <td className="py-4 px-4">{user.email}</td>
                     <td className="py-4 px-4">{user.role}</td>
